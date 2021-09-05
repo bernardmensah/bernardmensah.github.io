@@ -1,0 +1,66 @@
+body
+{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #F4AC45 ;
+	background-color: #275e68;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+
+header, footer
+{
+	text-align: center;
+	color: #F4AC45;
+	font-weight: bold;
+}
+
+h1, h2, h3
+{
+	color: #F4AC45;
+	font-family: Cambria, Cochin, Georgia, serif;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 200%;
+	line-height: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color:rgb(185, 211, 228);
+}
+
+a:hover
+{
+	text-decoration: overline underline;
+}
+
+
+figure
+{
+	text-align: center;
+
+}
+
+.profile-image{
+  width:655px;
+  height:433px;
+}
+
+figcaption
+{
+	font-style: italic;
+}
+
+
+nav
+{
+	text-align: center;
+}
+
+
+
