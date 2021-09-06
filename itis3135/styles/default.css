@@ -62,5 +62,34 @@ nav
 	text-align: center;
 }
 
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	width:50%;
+}
+
+th{
+	border: 1.5px solid rgba(43, 149, 153, 0.623);
+
+	text-align: center;
+	vertical-align: middle;
+}
+td{
+	border: 1.5px solid rgba(43, 149, 153, 0.623);
+
+	text-align: left;
+	vertical-align: middle;
+}
+
+tbody tr:nth-child(even) td{
+	background-color: rgb(195, 231, 195);
+}
+  
+tbody tr:nth-child(odd) td{
+	background-color: #308696;
+}
+
+
+
 
 
