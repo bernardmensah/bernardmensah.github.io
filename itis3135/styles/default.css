@@ -22,11 +22,6 @@ h1, h2, h3
 	text-align: center;
 }
 
-h3
-{
-	font-size: 200%;
-	line-height: 0px;
-}
 
 a
 {
@@ -43,7 +38,6 @@ a:hover
 figure
 {
 	text-align: center;
-
 }
 
 .profile-image{
