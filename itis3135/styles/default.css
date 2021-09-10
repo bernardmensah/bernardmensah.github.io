@@ -86,5 +86,71 @@ tbody tr:nth-child(odd) td{
 }
 
 
+/**Css for survey form**/
+.survey-text{
+	color:rgb(185, 211, 228);
+}
+.form-body{
+	margin:auto;
+	width: 50%;
+}
 
+form{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5em;
+}
+
+.form-input-area{
+	padding-bottom: 20px;
+}
+
+.form-dropdown{
+	padding-bottom: 30px;
+}
+
+.form-control{
+	height: 20px;
+	width: 300px;
+	border: unset;
+}
+label{
+	padding-right: 10px;
+	font-size: larger;
+}
+
+.checkboxes-and-radio{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 2em;
+}
+
+.form-btn{
+	padding-right: 6em;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: end;
+}
+
+.buttons{
+	height:30px;
+	width: 70px;
+	border: unset;
+	border-radius: 8%;
+	background-color: rgb(36, 152, 206);
+}
+
+.label-button{
+	color: rgb(190, 236, 238);
+}
+
+.buttons:hover{
+	background-color: rgb(8, 57, 80);
+}
 
