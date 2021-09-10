@@ -112,15 +112,18 @@ form{
 }
 
 .form-dropdown{
+	padding-left: 110px;
+	padding-right: 110px;
 	padding-bottom: 30px;
 }
 
 .form-control{
 	height: 20px;
-	width: 300px;
+	width: 200px;
 	border: unset;
 }
 label{
+	text-align:left;
 	padding-right: 10px;
 	font-size: larger;
 }
