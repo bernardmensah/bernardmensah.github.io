@@ -23,73 +23,70 @@
 	
 	<main>
         <h2>Survey</h2>
-<h3 class="survey-text">Are you interested in our weekly newspaper and coupon deals?</h3>
+<h3 class="survey-text">Are you interested in subscribing to our newsletter and coupon deals?</h3>
 <h3 class="survey-text">Sign Up Below</h3>
 		<div class="form-body">
 			<form action="#">
 				<div class="form-input-area">
 						  <div class="form-group">
 							<label>Name:</label>
-							<input type="text" class="form-control" placeholder="" required>
+							<input type="text" name="Name"class="form-control" placeholder="" required>
 						  </div>
 
 						  <div class="form-group">
 							<label>Email:</label>
-							<input type="text" class="form-control" placeholder="email">
+							<input type="email" name="Email"class="form-control" placeholder="email">
 						  </div>
 
 						  <div class="form-group">
 							<label>Phone:</label>
-							<input type="text" class="form-control" placeholder="(000)-(000)-(0000)">
+							<input type="number" name="Phone"class="form-control" placeholder="(000)-(000)-(0000)">
 						  </div>
 						</div>
 						<div class="form-dropdown">
 							  <!-- select -->
 							  <div class="form-group">
-								<label>Select</label>
+								<label>How would you like to receive communications?</label>
 								<select class="form-control">
-								  <option>option 1</option>
-								  <option>option 2</option>
-								  <option>option 3</option>
-								  <option>option 4</option>
-								  <option>option 5</option>
+								  <option>Email</option>
+								  <option>Call</option>
+								  <option>Text Message</option>
 								</select>
 							  </div>
 						  </div>
 						<div class="checkboxes-and-radio">
 					  <div class="form-checkboxes">
 						  <!-- checkbox -->
-						 
+						 <h4>Which category of our newsletter interests you?</h4>
 							<div class="form-check">
 							  <input class="form-check-input" type="checkbox">
-							  <label class="form-check-label">Checkbox</label>
-							</div>
-							<div class="form-check">
-							  <input class="form-check-input" type="checkbox" checked="">
-							  <label class="form-check-label">Checkbox checked</label>
+							  <label class="form-check-label">Weekly coupon deals</label>
 							</div>
 							<div class="form-check">
 							  <input class="form-check-input" type="checkbox">
-							  <label class="form-check-label">Checkbox disabled</label>
+							  <label class="form-check-label">New innovations</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox">
+							  <label class="form-check-label">Upcoming Events</label>
 							</div>
 						
 						</div>
 						<div class="form-radiobuttons">
 						  <!-- radio -->
-						
+						  <h4>Communication frequency</h4>
 							<div class="form-check">
 							  <input class="form-check-input" type="radio" name="radio1">
-							  <label class="form-check-label">Radio</label>
+							  <label class="form-check-label">Daily</label>
 							</div>
 							<div class="form-check">
 							  <input class="form-check-input" type="radio" name="radio1" checked="">
-							  <label class="form-check-label">Radio checked</label>
+							  <label class="form-check-label">Weekly</label>
 							</div>
 							<div class="form-check">
-							  <input class="form-check-input" type="radio">
-							  <label class="form-check-label">Radio disabled</label>
-							</div>
-					
+								<input class="form-check-input" type="radio" name="radio1" checked="">
+								<label class="form-check-label">Monthly</label>
+							  </div>
 						</div>
 					</div>
 					  <div class="form-buttons">
