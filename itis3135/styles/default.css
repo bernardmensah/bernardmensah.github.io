@@ -86,35 +86,62 @@ tbody tr:nth-child(odd) td{
 }
 
 
-/**Css for survey form**/
+/**Css for newsletter**/
+/*styling for the coffee types*/
+p{
+	text-align: center;
+}
+
+.list-items{
+	width:15%;
+	margin: 0 auto;
+}
+.label {    
+	font-weight: bold;
+}
+/*styling for the tables*/
+.altrow {
+	background-color: #E0E0E0;
+}
+/*styling for the Google Map link*/
+#locationlink {
+	color: #380000;
+	font-style:italic;
+}
+
 .survey-text{
 	color:rgb(185, 211, 228);
 	padding-bottom: 10px;
 }
 .form-body{
 	margin:auto;
-	width: 50%;
+	width: 80%;
 }
 
 form{
+	background-color: #0e383f;
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 1%;
 }
 
 .form-group{
 	display: flex;
 	justify-content: space-around;
 	padding: 0.5em;
+	padding-left: 110px;
+	padding-right: 110px;
 }
 
 .form-input-area{
+	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 .form-dropdown{
-	padding-left: 110px;
-	padding-right: 110px;
+	padding-left: 20px;
+	padding-right: 80px;
 	padding-bottom: 30px;
 }
 
