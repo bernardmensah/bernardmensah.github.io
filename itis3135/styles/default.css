@@ -89,6 +89,7 @@ tbody tr:nth-child(odd) td{
 /**Css for survey form**/
 .survey-text{
 	color:rgb(185, 211, 228);
+	padding-bottom: 10px;
 }
 .form-body{
 	margin:auto;
@@ -118,9 +119,11 @@ form{
 }
 
 .form-control{
+	background-color:rgb(226, 235, 241);
 	height: 20px;
 	width: 200px;
 	border: unset;
+	border-radius: 4%;
 }
 label{
 	text-align:left;
