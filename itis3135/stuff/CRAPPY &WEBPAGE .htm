@@ -1,81 +1,37 @@
 
-<!DOCTYPE htm>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
     <title>Crappy Webpage</title>
-    <script>
-        body{
-            color: black;
-            background-color: white;
-
-            margin-left:25px;
-            margin-right:500px;
-        }
-img{
-    height: 400px;
-    width: 400px;
-}
-
-.papyrus{
-    font-family: papyrus;
-    text-align:center;
-}
-
-.comic-sans{
-    font-family:comic sans;
-}
-
-.times {
-    font-family:times;
-}
-ul li{
-    text-align:center;
-}
-
-.huge-text{
-    font-size:larger;
-}
-
-.background-text{
-    color:white;
-}
-.big-border{
-    height:600px;
-    width:300px;
-    border-left: green;
-    border-top: yellow;
-    border-right: pink;
-    border-bottom: red;
-}
-    </script>
+    <link href="styles/default.css" rel="stylesheet" type="text/css" >
 </head>
 
-<body>
-<img src="z_archives/reallybigpicture">
+<body style="color: black; background-color: white; margin-left:25px; margin-right:500px;">
+<img src="z_archives/reallybigpicture" style="height:400px; width: 400px;">
 <h2>This is the heading for a very huge Picture</h2>
-<p class="papyrus">
-    This is a paragraph for texts with font-family <span class="huge-text">"Papyrus"</span>
+<p style="font-family: papyrus; text-align: center;">
+    This is a paragraph for texts with font-family <span style="font-size:larger;">"Papyrus"</span>
 </p>
 <br>
 <br>
 <br>
 <br>
 <br>
-<p class="comic-sans">
+<p style="font-family:comic sans;">
     This is a paragraph for texts with font-family <u>"comic-sans"</u>
 </p>
 <br>
 <br>
-<p class="times">
-    This is a paragraph for <span class="background-text">texts with font-family "times"</span>
+<p style="font-family:times;">
+    This is a paragraph for <span style="color:white;">texts with font-family "times"</span>
 </p>
 
 <h1>This is the caption for a very huge Picture</h1>
 
 <ul>
-    <li>Bullet point 1</li>
-    <li>Bullet point 2</li>
+    <li style="text-align:center;">Bullet point 1</li>
+    <li style="text-align:center;">Bullet point 2</li>
 </ul>
 <br>
 <br>
@@ -84,7 +40,7 @@ ul li{
 <br>
 <br>
 
-<div class="big-border">
+<div style=" height:600px; width:300px; border-left: green; border-top: yellow; border-right: pink; border-bottom: red;">
     <p>put a really big border somewhere
         on the border and make all four side differently styled</p>
 </div>
