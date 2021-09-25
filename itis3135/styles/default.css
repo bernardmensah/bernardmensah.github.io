@@ -15,7 +15,7 @@ header, footer
 	font-weight: bold;
 }
 
-h1, h2, h3
+h1, h2, h3, h4
 {
 	color: #F4AC45;
 	font-family:serif;
@@ -152,8 +152,8 @@ label{
 }
 
 .buttons{
-	height:30px;
-	width: 70px;
+	height:40px;
+	width: 90px;
 	border: unset;
 	border-radius: 8%;
 	background-color: rgb(36, 152, 206);
@@ -167,3 +167,10 @@ label{
 	background-color: rgb(8, 57, 80);
 }
 
+/**Css for first-scripts**/
+.script-buttons{
+    display: flex;
+	justify-content:space-around;
+	margin-right:100px;
+	margin-left:100px;
+}
