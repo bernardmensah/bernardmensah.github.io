@@ -1,4 +1,4 @@
-var companyName = "Bernard's IT solutions";
+var companyName = "Brilliant Mule Enterprises, Co.";
 var userName = prompt("Please enter your name ");
 var userQuestion = prompt("How are you doing today");
 var dateAndTime =  new Date();
