@@ -56,7 +56,7 @@ function validateEntry(number){
         if(number < -10 || number > 10)
         {
             var userNumber = prompt("Error: The number is invalid \nThe Brilliant Mule would like your number...");
-            return userNumber;
+            return validateEntry(userNumber);
         }
         else if(!Number.isInteger(number))
         {
