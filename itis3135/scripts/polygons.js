@@ -49,7 +49,7 @@ function getShape(number){
     {
         alert("The polygon is a decagon!!!");
     }
- }
+}
 
 /*function to validate the user's input*/
 function validateEntry(number){
