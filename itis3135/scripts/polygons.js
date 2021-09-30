@@ -4,7 +4,7 @@ var userNumber = prompt("The Brilliant Mule would like your number...");
 /* function to get the shape that has number of sides that corresponds 
 to the user's input */
 function getShape(number){
-    number = Math.abs(number);
+
     if(number == 0)
     {
      alert("This is not a polygon, it is a circle!!!");
@@ -53,16 +53,20 @@ function getShape(number){
 
 /*function to validate the user's input*/
 function validateEntry(number){
-        if(number < -10 || number > 10)
-        {
-            var userNumber = prompt("Error: The number is invalid \nThe Brilliant Mule would like your number...");
-            return validateEntry(userNumber);
-        }
-        else if(!Number.isInteger(number))
-        {
-            var number  = Math.round(number);
-            return number;
-        }
+    number = Math.abs(number);
+    if(number > 10)
+    {
+        var userNumber = prompt("Error: The number is invalid \nThe Brilliant Mule would like your number...");
+        return validateEntry(userNumber);
+    }
+    else if(!Number.isInteger(number))
+    {
+        var number  = Math.round(number);
+        return number;
+    }
+    else{
+        return number;
+    }
 }
 
 /* the get shape function is called after the user enters a number
