@@ -1,10 +1,12 @@
-window.onload = function() {
+window.onload = function() 
+{
     const calculator = document.querySelector(".calculator");
     const keys = calculator.querySelector(".calculator-all-buttons");
     const display = document.querySelector(".calculator-textbox");
 
     /** Calucale function */
-    const calculate = function (n1, operator, n2) {
+    const calculate = function (n1, operator, n2) 
+    {
       const firstNum = parseFloat(n1)
       const secondNum = parseFloat(n2)
         switch (operator) {
@@ -16,7 +18,8 @@ window.onload = function() {
     }
     
     /**getKeyType to get the data action for the key that was pressed */
-    const getKeyType = key => {
+    const getKeyType = key => 
+    {
       const { action } = key.dataset;
       if (!action) return 'number';
       if (
@@ -30,56 +33,64 @@ window.onload = function() {
     
     
     /**function to create a result string after the calculation */
-    const createResultString = (key, displayedNum, state) => {
+    const createResultString = (key, displayedNum, state) => 
+    {
       const keyContent = key.textContent;
       const keyType = getKeyType(key);
-      const {
+      const 
+      {
         firstValue,
         operator, 
         modValue,
         previousKeyType,
       } = state;
         
-        if (keyType === 'number') {
+        if (keyType === 'number') 
+        {
           return displayedNum === '0' || 
               previousKeyType === 'operator' || 
               previousKeyType === 'calculate'
               ? keyContent
               : displayedNum + keyContent;
-      }
+        }
     
-      if (keyType === 'decimal') {
+        if (keyType === 'decimal') 
+        {
             if (previousKeyType === 'operator' || previousKeyType === 'calculate') return '0.';
             if (!displayedNum.includes('.')) return displayedNum + '.';
             return displayedNum ;
         }
     
-      if (keyType === 'operator') {
+        if (keyType === 'operator') 
+        {
         return firstValue && 
           operator && 
           previousKeyType !== 'operator' &&       
           previousKeyType !== 'calculate'
           ? calculate(firstValue, operator, displayedNum)
           : displayedNum  ;    
-      } 
+        } 
     
-      if (keyType === 'clear') return 0;
+        if (keyType === 'clear') return 0;
     
-      if (keyType === 'calculate') {     
-      return firstValue     
-        ? previousKeyType === 'calculate'          
+        if (keyType === 'calculate') 
+        {     
+          return firstValue     
+          ? previousKeyType === 'calculate'          
           ? calculate(displayedNum, operator, modValue)
           : calculate(firstValue, operator, displayedNum)
-        : displayedNum
+          : displayedNum
         }
     }
     
 
     /**function to update the calculator's state */
-    const updateCalculatorState = (key, calculator, calculatedValue, displayedNum) => {
+    const updateCalculatorState = (key, calculator, calculatedValue, displayedNum) => 
+    {
     
         const keyType = getKeyType(key)
-        const {
+        const 
+        {
           firstValue,
           operator,
           modValue,
@@ -88,7 +99,8 @@ window.onload = function() {
     
         calculator.dataset.previousKeyType = keyType
     
-      if (keyType === 'operator') {
+      if (keyType === 'operator') 
+      {
         calculator.dataset.operator = key.dataset.action
         calculator.dataset.firstValue = firstValue && 
           operator && 
@@ -98,22 +110,25 @@ window.onload = function() {
           : displayedNum  
       }
     
-      if (keyType === 'calculate') {
+      if (keyType === 'calculate') 
+      {
         calculator.dataset.modValue = firstValue && previousKeyType === 'calculate'
             ? modValue
             : displayedNum
       }
     
-      if (keyType === 'clear' && key.textContent === 'AC') {
+      if (keyType === 'clear' && key.textContent === 'AC') 
+      {
             calculator.dataset.firstValue = '';
             calculator.dataset.operator = '';
             calculator.dataset.modValue = '';
             calculator.dataset.previousKeyType = '';
-          } 
+      } 
     } 
     
     /**function to update the Visual State of the calculator */
-    const updateVisualState = (key, calculator) => {
+    const updateVisualState = (key, calculator) => 
+    {
       const keyType = getKeyType(key);
       Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'))
     
@@ -127,14 +142,16 @@ window.onload = function() {
          key.textContent = 'AC';
       }
     
-      if (keyType !== 'clear') {
+      if (keyType !== 'clear') 
+      {
         const clearButton = calculator.querySelector('[data-action=clear]');
         clearButton.textContent = 'CE';
       }
     }
 
     /**event listener for every key that is pressed */
-    keys.addEventListener('click', e => {
+    keys.addEventListener('click', e => 
+    {
       if (!e.target.matches('button')) return
         const key = e.target;
         const displayedNum = display.textContent;

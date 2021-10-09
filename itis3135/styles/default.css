@@ -173,6 +173,7 @@ label{
 	justify-content:space-around;
 	margin-right:100px;
 	margin-left:100px;
+	padding: 2em;
 }
 
 /**Css for calculator**/
@@ -218,4 +219,20 @@ font-size:larger
 .clear-button{
 	grid-column: 1 / span 4;
 
+}
+
+/**Arrays*/
+.dropdown-arrays{
+	display:flex;
+	justify-content: center;
+}
+
+.dropdown-elements{
+	color:#181894;
+	background-color: aquamarine;
+}
+
+.salary-inputData{
+	display:grid;
+	justify-content: center;
 }

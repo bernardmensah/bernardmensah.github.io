@@ -3,7 +3,8 @@ var userNumber = prompt("The Brilliant Mule would like your number...");
 
 /* function to get the shape that has number of sides that corresponds 
 to the user's input */
-function getShape(number){
+function getShape(number)
+{
 
     if(number == 0)
     {
@@ -52,7 +53,8 @@ function getShape(number){
 }
 
 /*function to validate the user's input*/
-function validateEntry(number){
+function validateEntry(number)
+{
     number = Math.abs(number);
     if(number > 10)
     {

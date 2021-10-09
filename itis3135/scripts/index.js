@@ -16,7 +16,8 @@ window.onload = function() {
                            }
 
 
-function calculateCost(){
+function calculateCost()
+{
    var duration = prompt("How many days do you intend to use our services not including weekends");
    var duration = parseInt(duration);
    var dailyCost = 100;
@@ -24,7 +25,8 @@ function calculateCost(){
 }
 
 
-function calculateCostPlusTax(){
+function calculateCostPlusTax()
+{
    var duration = prompt("How many days do you intend to use our services not including weekends");
    var duration = parseInt(duration);
    var dailyCost = 100;
@@ -32,7 +34,8 @@ function calculateCostPlusTax(){
    alert("On the average, our services cost " + duration * (dailyCost + taxAmountPerDailyCost) +" plus Tax for " + duration + " days not including weekends");
 }
 
-function calculateBugdetDays(){
+function calculateBugdetDays()
+{
    var budget = prompt("What is your budget?");
    var budget = parseFloat(budget);
    var dailyCost = 100;
@@ -40,7 +43,8 @@ function calculateBugdetDays(){
    alert("Your budget is equivalent to the cost of our services for " + numberOfDaysForBudget + " days not including weekends");
 }
 
-function bandWidthTest(){
+function bandWidthTest()
+{
    var bandwidth = prompt("How many people share the same bandwidth in the household?");
    var bandwidth = parseInt(bandwidth);
 
@@ -53,7 +57,8 @@ function bandWidthTest(){
    }
 }
 
-function rateExperience(){
+function rateExperience()
+{
    var bandwidth = prompt("How would you rate your experience with our website?");
    var bandwidth = parseInt(bandwidth);
 

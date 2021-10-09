@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
-    <title>BERNARD MENSAH, ITIS3135,Walk through a calculator build</title>
-    <script src="scripts/calculator_try.js"></script>
+    <title>BERNARD MENSAH, ITIS3135, Activity 8- Arrays</title>
 </head>
 
 <body>
@@ -39,34 +38,32 @@
     </nav>
 
     <main>
-        <h2>Trial Calculator</h2>
-        <br>
-        <br>
-        <div class="calculator">
-            <input class="calculator-textbox">
-            <div class="calculator-all-buttons">
-                <button class="calculator-buttons">7</button>
-                <button class="calculator-buttons">8</button>
-                <button class="calculator-buttons">9</button>
-                <button class="calculator-buttons">/</button>
-                <button class="calculator-buttons">4</button>
-                <button class="calculator-buttons">5</button>
-                <button class="calculator-buttons">6</button>
-                <button class="calculator-buttons">*</button>
-                <button class="calculator-buttons">1</button>
-                <button class="calculator-buttons">2</button>
-                <button class="calculator-buttons">3</button>
-                <button class="calculator-buttons">-</button>
-                <button class="calculator-buttons">=</button>
-                <button class="calculator-buttons">0</button>
-                <button class="calculator-buttons">.</button>
-                <button class="calculator-buttons">+</button>
-                <button class="calculator-buttons clear-button">Clear</button>
-            </div>
-
+        <h2>Arrays</h2>
+        <div class="script-buttons">
+            <button type="submit" class="buttons" onclick="addSalary()"><span class="label-button">Add
+                    Salary</span></button>
+            <button type="submit" class="buttons" onclick="displayResult()"><span class="label-button">Display
+                    Results</span></button>
+            <button type="submit" class="buttons" onclick="displaySalary()"><span class="label-button">Display
+                    Salary</span></button>
         </div>
+        <div class="dropdown-arrays">
+            <select class="dropdown-elements" id="dropdownElements">
+                <option>Abigail Dawn</option>
+                <option>Francis Mensah</option>
+                <option>Jason Cubb</option>
+                <option>Jessica Grubb</option>
+                <option>Kendrick Dot</option>
+                <option>Michelle William</option>
+                <option>Mike Teller</option>
+                <option>Paul Keller</option>
+            </select>
+        </div>
+        <div id="results"></div>
+        <div id="results-table"></div>
+        <div id="salary-input" class="salary-inputData"></div>
     </main>
-
+    <script src="scripts/arrays.js"></script>
     <footer>
         <br />
         <nav>
@@ -81,12 +78,12 @@
         <p>
             Page built by Bernard's IT solutions
         </p>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fbmensah1%2Fitis3135%2Fcalculator_try.html">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fbmensah1%2Fitis3135">
             <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
         </a>
 
         <a
-            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fbmensah1%2Fitis3135%2Fcalculator_try.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fbmensah1%2Fitis3135&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
             <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
         </a>
 
