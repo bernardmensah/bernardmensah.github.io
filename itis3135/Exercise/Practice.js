@@ -14,8 +14,16 @@ window.onload = function() {
 		newOrder.innerHTML = "$" + itemPrice + " - Espresso - Delicious espresso. Wanna try it?"
 		orderId.appendChild(newOrder);
 
-		var totalId = document.getElementById("total");
-		totalId.innerHTML +=itemPrice;
+		var totalPrice = document.getElementById("total-price");
+       
+		if(totalPrice.innerHTML == null)
+		{
+		totalPrice.innerHTML = itemPrice;
+		}
+		else
+		{
+			totalPrice.innerHTML = itemPrice + parseFloat(totalPrice.innerHTML);
+		}
 	});
 
 	$("cappucino").addEventListener('click', function ()
@@ -26,8 +34,15 @@ window.onload = function() {
 		newOrder.innerHTML = "$" + itemPrice + " - Cappucino - Delicious cappucino?"
 		orderId.appendChild(newOrder);
 
-		var totalId = document.getElementById("total");
-		totalId.innerHTML += itemPrice;
+		var totalPrice = document.getElementById("total-price");
+		if(totalPrice.innerHTML == null)
+		{
+		totalPrice.innerHTML = itemPrice;
+		}
+		else
+		{
+			totalPrice.innerHTML = itemPrice + parseFloat(totalPrice.innerHTML);
+		}
 	});
 	// for click event add item to order and update total
 
