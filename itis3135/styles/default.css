@@ -272,7 +272,7 @@ font-size:larger
 	position: relative;
 	overflow: hidden;
 	margin: 20px auto 0 auto;
-	border-radius: 4px;
+	border-radius: 1%;
 }
   
 #picture-holder ul {
@@ -280,7 +280,6 @@ font-size:larger
 	margin: 0;
 	padding: 0;
 	height: 200px;
-	list-style: none;
 }
 
 #picture-holder ul li {
@@ -289,9 +288,6 @@ font-size:larger
 	float: left;
 	margin: 0;
 	padding: 0;
-	background: #ccc;
-	text-align: center;
-	line-height: 300px;
 }
 
 a.previous, a.next {
