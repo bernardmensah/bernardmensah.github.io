@@ -1,0 +1,66 @@
+body
+{
+	font-family:'Gill Sans MT', Calibri, sans-serif;
+	color: #00ffff ;
+	background-color: #274568;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+
+header, footer
+{
+	text-align: center;
+	color: #00ffff;
+	font-weight: bold;
+}
+
+h1, h2, h3, h4
+{
+	color: rgb(185, 211, 228);
+	font-family:serif;
+	text-align: center;
+}
+
+
+
+a
+{
+	text-decoration: none;
+	color:rgb(185, 211, 228);
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+
+figure
+{
+	text-align: center;
+}
+
+.profile-image{
+  width:70%;
+  height:690px;
+  border-radius: 1%;
+}
+
+figcaption
+{
+	font-style: italic;
+}
+
+
+nav
+{
+	text-align: center;
+}
+
+.about-me{
+    margin: 2em;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
