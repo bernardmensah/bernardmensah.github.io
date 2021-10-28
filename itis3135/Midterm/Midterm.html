@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weekly Calorie Calculator</title>
+    <link rel="stylesheet" href="Midterm.css">
+    <script src="Midterm.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Weekly Calorie Calculator</h1>
+        <!--add the form-->
+        <form id="your_details" name="your_details" action="#">
+            <h2>Enter your details</h2>
+            <label><strong>Name</strong></label>
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <br>
+            <label><strong>Email</strong></label>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+        <!--add the radio buttons-->
+        <div class="radio-buttons">
+            <p>Choose a day:</p>
+            <div class="radio-group">
+                <label>Monday</label>
+                <input type="radio" name="radio1" value="Monday">
+            </div>
+            <div class="radio-group">
+                <label>Tuesday</label>
+                <input type="radio" name="radio1" value="Tuesday">
+            </div>
+            <div class="radio-group">
+                <label>Wednesday</label>
+                <input type="radio" name="radio1" value="Wednesday">
+            </div>
+            <div class="radio-group">
+                <label>Thursday</label>
+                <input type="radio" name="radio1" value="Thursday">
+            </div>
+            <div class="radio-group">
+                <label>Friday</label>
+                <input type="radio" name="radio1" value="Friday">
+            </div>
+            <div class="radio-group">
+                <label>Saturday</label>
+                <input type="radio" name="radio1" value="Saturday">
+            </div>
+            <div class="radio-group">
+                <label>Sunday</label>
+                <input type="radio" name="radio1" value="Sunday">
+            </div>
+        </div>
+
+        <!--input for calorie-->
+        <label>Enter the Calorie:</label>
+        <input type="number" name="Number" id="calorie-amount" required>
+        <br>
+        <!--button for updating calorie-->
+        <button type="submit" id="update-button">Update</button>
+        <br>
+        <!--button for add calorie-->
+        <button type="submit" id="average-button">Average Calorie</button>
+        <br>
+        <!--text box for showing Average calorie-->
+        <label>Average Calorie Consumed is:</label>
+        <br>
+        <input type="text" name="average" id="average-field">
+
+        <!--header for showing maximum calorie amount and cheat day-->
+        <strong id="show_max">Show Maximum Calorie and Cheat Day:</strong>
+        <!--div for showing maximum calorie amount and cheat day-->
+        <div id="showMax"></div>
+
+    </main>
+    <footer>
+        <br />
+        <a href="https://validator.w3.org/">Validate HTML</a>
+        <br />
+        <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
+    </footer>
+</body>
+
+</html>
