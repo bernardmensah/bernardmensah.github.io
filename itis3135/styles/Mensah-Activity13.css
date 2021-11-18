@@ -11,12 +11,12 @@ body {
 }
 header {
 	height: 100px;
-	background: url('images/logo.gif') no-repeat 25px;
+	background: url('../images/Mensah_Activity13-images/logo.gif') no-repeat 25px;
 }
  main h2 {
 	font-size: 14px;
 	font-weight: bold;
-	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	background: #dfe3e6 url('../images/Mensah_Activity13-images/bullet.gif') no-repeat 7px center;
 	padding: 3px 0 3px 20px;
 	border: solid #929ca4 1px;
 	color: #cc1c0d;
@@ -37,6 +37,6 @@ h3 {
 }
 footer {
 	height: 35px;
-	background: url('images/footer.gif');
+	background: url('../images/Mensah_Activity13-images/footer.gif');
 	clear: both;
 }
