@@ -329,7 +329,6 @@ footer{
 
 .cart-items{
   margin-bottom: 1em;
-  padding-bottom: 1em;
   border-bottom: 1px solid #333;
 
 }
@@ -343,9 +342,11 @@ footer{
 
 }
 .items-and-name{
-  width:30%;
- margin-left: .5em;
+  width:29%;
+ margin-left: 1em;
+ margin-right:2.5em;
 }
+
 
 .input-area{
   width:50px;
@@ -403,6 +404,7 @@ background-color: rgb(238, 89, 89);
 /** Css fot newsletter*/
 .survey-text{
 	color:rgb(80, 135, 172);
+  font-size: xx-large;
 	padding-bottom: 10px;
 }
 .form-body{

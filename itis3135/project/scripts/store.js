@@ -98,6 +98,9 @@ $(document).ready(function()
     $(".item-button").on('click',function(evt)
     {
         console.log($(this).attr("data-index"));
+        var itemIndex =  $(this).attr("data-index");
+        var value = 1;
+        localStorage.setItem(itemIndex, 1);
     })
 
 
