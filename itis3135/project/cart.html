@@ -13,33 +13,34 @@
 <body>
 
     <div data-include="components/siteheader.html"></div>
-    <section class="content-section container">
-        <h2> CART</h2>
-        <div class="cart-container" id="cart_container">
-            <div class="cart-headings">
-                <span class="cart-heading-items">ITEM</span>
-                <span class="cart-heading-items">PRICE</span>
-                <span class="cart-heading-items">QUANTITY</span>
-            </div>
-            <div id="cart-items-container">
+    <main>
+        <section class="content-section container">
+            <h2 class="section-header"> CART</h2>
+            <div class="cart-container" id="cart_container">
+                <div class="cart-headings">
+                    <span class="cart-heading-items">ITEM</span>
+                    <span class="cart-heading-items">PRICE</span>
+                    <span class="cart-heading-items">QUANTITY</span>
+                </div>
+                <div id="cart-items-container">
 
-        </div>
-            <hr>
-            <div class="cart-purchase">
-                <strong class="purchase-total">Total =</strong>
-                <span class="purchase-total">$<span id="total-price">0.0</span></span>
+                </div>
+                <hr>
+                <div class="cart-purchase">
+                    <strong class="purchase-total">Total =</strong>
+                    <span class="purchase-total">$<span id="total-price">0.0</span></span>
+                </div>
             </div>
-        </div>
-        <button class="cart-purchase-button tour-btn" onclick="location.href='billing.html'"
-        type="button">
-        PURCHASE</button>
+            <button class="cart-purchase-button tour-btn" onclick="location.href='billing.html'" type="button">
+                PURCHASE</button>
 
-    </section>
+        </section>
+    </main>
     <br>
     <br>
     <br>
     <div data-include="components/sitefooter.html"></div>
-	<script src="scripts/HTML-include.js"></script>
+    <script src="scripts/HTML-include.js"></script>
 </body>
 
 </html>
