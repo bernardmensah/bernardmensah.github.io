@@ -52,6 +52,7 @@ ul{
   display: inline;
 }
 
+
 .nav a{
   display: inline-block;
   padding: .3em;
@@ -507,7 +508,7 @@ label{
 
 /** About page accordion */
 #accordion{
-  margin-left:400px auto;
+  margin:0 400px 0 0;
   width: 100%;
 
 }
