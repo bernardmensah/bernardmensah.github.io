@@ -2,6 +2,7 @@
 $.validator.setDefaults({
     submitHandler: function() {
         alert("Subscribed! You are all set");
+        location.replace("index.html");
     }
 });
 
