@@ -1,0 +1,61 @@
+{"storeItems":[
+    {
+        "id": "0",
+        "name": "AWAKE",
+        "image": "images/store-images/awake.jpg",
+        "price":"$12.99"
+    },
+    {
+        "id": "1",
+        "name": "NINETY",
+        "image": "images/store-images/ninety.jpg",
+        "price":"$13.99"
+    },
+    {
+        "id": "2",
+        "name": "COLD WORLD (Deluxe)",
+        "image": "images/store-images/cold-world.jpg",
+        "price":"$13.99"
+    },
+    {
+        "id": "3",
+        "name": "SITUATION",
+        "image": "images/store-images/situation.jpg",
+        "price":"$12.99"  
+    },
+    {
+        "id": "4",
+        "name": "Brown Hoodie",
+        "image": "images/store-images/brownhoodie.png",
+        "price":"$49.99" 
+    },
+    {
+        "id": "5",
+        "name": "G-A White Tee",
+        "image": "images/store-images/whitet.jpg",
+        "price":"$29.99" 
+    },
+    {
+        "id": "6",
+        "name": "Waist Bag",
+        "image": "images/store-images/waist-bag.jpg",
+        "price":"$12.99"   
+    },
+    {
+        "id": "7",
+        "name": "Airpods Case",
+        "image": "images/store-images/airpods-case.jpeg",
+        "price":"$14.99"   
+    },
+    {
+        "id": "8",
+        "name": "Coffee Mug",
+        "image": "images/store-images/coffeemug.jpg",
+        "price":"$9.99" 
+    },
+    {
+        "id": "9",
+        "name": "Face Mask",
+        "image": "images/store-images/facemask.jpg",
+        "price":"$4.99" 
+    }]}

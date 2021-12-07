@@ -1,0 +1,576 @@
+/**General pages css*/
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: rgb(56, 56, 56);
+  margin-bottom: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  height: 100%;
+}
+
+main{
+  position: relative;
+  min-height: 67vh;
+}
+a{
+  text-decoration: none;
+}
+
+h1, h2, h3{
+  text-align: center;
+  font-weight: normal;
+
+  font-size: 50px;
+}
+
+h4{
+  text-align: center;
+  color: lightgray;
+  font-weight: bold;
+}
+
+h5{
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #bb78cc;
+  font-size: 30px;
+}
+
+p{
+  text-align: justify;
+  color: #000000bf;
+
+}
+
+/** Navigation bar*/
+ul{
+  height: 50px;
+
+}
+.nav ul{
+  margin:0;
+}
+
+.nav li{
+  display: inline;
+}
+
+
+.nav a{
+  display: inline-block;
+  padding: .3em;
+  margin-right: 2em;
+  margin-top: .5em;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1em;
+  color: #56CCF2;
+  font-family:cursive;
+}
+
+.nav a:hover{
+  background-color: rgba(238, 235, 235, 0.3);
+}
+
+.main-nav {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: lighter;
+  
+}
+
+.list-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*https://codepen.io/chandrashekhar/pen/abzMOvO */
+#count {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #c933cb;
+  border-radius: 500px;
+  font-size: 12px;
+  display: inline-flex;;
+  justify-content: center;
+  align-items: center;
+  top: 3px;
+  right: 20px;
+  color: #f6f6f6;
+  transform: translate(0%, -0%);
+  z-index: 2;
+}
+
+/**Header Css*/
+.main-header{
+  height: 300px;
+  width:100%;
+  background-image: url("../images/gemini-angels-background.png");
+  background-blend-mode:normal;
+  background-size:cover;
+  background-position: center;
+  padding: 1px;
+  
+}
+
+.band-name{
+  text-align: center;
+  padding-left: 0.5em;
+  margin-top: 0;
+  font-size: 3.2em;
+  font-weight: normal;
+  color: rgba(222, 217, 226, 0.9);
+}
+
+.band-name-large{
+  font-size: 12em;
+}
+
+.content-section{
+  margin: 1em;
+}
+
+.container{
+  padding:0 1.5em;
+  margin:0 auto;
+  max-width: 900px;
+  font-size: larger;
+}
+
+.section-header{
+  text-align: center;
+  font-weight: normal;
+  color: #03a9f4;
+  font-size: 50px;
+}
+
+
+/** Footer Css*/
+footer{
+
+  background-color: rgba(37, 36, 36, 0.7);
+  background-image:  url("../images/image4.png");
+  background-size:auto;
+  background-blend-mode:multiply;
+  color: white;
+}
+.main-footer-container{
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width:100%;
+}
+
+.main-footer-container ul{
+  flex-grow: 1;
+  text-align: end;
+  margin: 0;
+}
+
+.footer-nav li{
+  padding: 0 .4em;
+}
+
+.validations{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav img{
+  width: 30px;
+  height:30px;
+}
+
+/**buttons Css*/
+.btn{
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.btn-header{
+  margin: .5em 15% 2em 15%;
+  color:white;
+  border:2px solid rgb(17, 82, 180);
+  background-color: rgba(255,255,255,.1);
+  font-size: 0.8em;
+}
+
+.btn-header:hover{
+ background-color: rgba(255, 253, 253, 0.3);
+}
+
+/**Homepage Css*/
+.btn-play{
+  display: block;
+  margin: 50px auto;
+  color:rgb(17, 82, 180);
+  font-size: 1.2em;
+  border-radius: 50%;
+  padding:0;
+  width: 45px;
+  height:45px;
+}
+
+
+#homepage-audio{
+ margin-top: 20px;
+ display: flex;
+ visibility: hidden;
+ justify-content: center;
+}
+
+
+#image{
+  margin-left: 80px;
+  width: 80%;
+  height: 700px;
+  border:none;
+  border-radius: 1em;
+}
+
+.tour-row{
+  border-bottom: 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child{
+  border-bottom: none;
+}
+
+.tour-item{
+  display: inline-block;
+  padding-right: .5em;
+
+}
+
+.tour-date{
+  color: #555;
+  font-weight: bold;
+  width: 11%;
+}
+
+.tour-city{
+  width: 25%;
+}
+
+.tour-venue {
+  width: 30%;
+
+}
+
+.tour-btn{
+  font-size: 10px;
+  width: 70px;
+  background-color: #56CCF2;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-weight: normal;
+  height: 35px;
+}
+
+.tour-btn:hover{
+  background-color: #2D9CDB;
+}
+
+
+/**Store Css*/
+.shop-item{
+  margin:20px;
+}
+
+.shop-item-title{
+  display:block;
+  width:100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px; 
+}
+
+.shop-item-details {
+  display:flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price{
+  font-weight: bold;
+  font-size: xx-large;
+  flex-grow: 1;
+}
+
+.shop-item-image {
+  border: 1px solid rgb(153, 156, 160);
+  border-radius: .5em;
+  width:250px;
+  height: 250px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#wrapper-2 {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item-button{
+  font-size: 10px;
+  width: 70px;
+  background-color: #56CCF2;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-weight: normal;
+  height: 35px;
+}
+
+.item-button:hover{
+  background-color: #0d72ad;
+}
+
+/**Cart Css*/
+.cart-container{
+  margin-left: 150px;
+  align-items: center;
+  justify-content: center;
+  width:77%;
+  background-color: lightgrey;
+}
+
+.cart-headings{
+  margin: 20px;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #333;
+
+}
+
+.cart-heading-items{
+  align-items: center;
+  padding:3em;
+  font-weight: bold;
+
+}
+
+.cart-items{
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333;
+
+}
+
+.items{
+  display: inline-block;
+  margin-right: .5em;
+  padding-right: 6.5em;
+   margin-bottom: 1em;
+
+
+}
+.items-and-name{
+  width:29%;
+ margin-left: 1em;
+ margin-right:2.5em;
+}
+
+
+.input-area{
+  width:50px;
+  justify-content: center;
+  padding-right: 0;
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+.cart-btn{
+  font-size: 10px;
+  max-width: 10%;
+  background-color: rgb(236, 31, 31);
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-weight: normal;
+  height: 30px;
+  margin-right: 1em;
+
+}
+
+.cart-btn:hover{
+background-color: rgb(238, 89, 89);
+}
+
+.cart-purchase{
+  text-align: end;
+  margin-right: 1em;
+  margin-bottom: 1.2em;
+  padding-bottom: 1em; 
+}
+
+.purchase-total{
+  font-size: xx-large;
+}
+.cart-purchase-button{
+  display:block;
+  margin: 40px auto 80px auto;
+  height: 50px;
+  font-size: x-large;
+  width:150px;
+}
+
+/**About Page CSS*/
+.about-band-image{
+  float: left;
+  width: 400px;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  border-radius: 20% 2%;
+  border-width: thick;
+  border-color: black;
+  border: none;
+  height: 250px;
+}
+
+/** Css fot newsletter*/
+.survey-text{
+	color:rgb(80, 135, 172);
+  font-size: xx-large;
+	padding-bottom: 10px;
+}
+.form-body{
+	margin:auto;
+	width: 80%;
+}
+
+form{
+  height: 600px;
+	background-color: #bb78cc;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1%;
+	padding-top: 4em;
+	padding-bottom: 2em;
+}
+
+.form-group{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5em;
+	padding-left: 110px;
+	padding-right: 110px;
+}
+
+.form-input-area{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.form-dropdown{
+	padding-left: 20px;
+	padding-right: 80px;
+	padding-bottom: 30px;
+}
+
+.form-control{
+	background-color:rgb(226, 235, 241);
+	height: 20px;
+	width: 200px;
+	border: unset;
+	border-radius: 4%;
+}
+label{
+	text-align:left;
+	padding-right: 10px;
+	font-size: larger;
+}
+
+.checkboxes-and-radio{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 2em;
+}
+
+.form-btn{
+	padding-right: 6em;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: end;
+}
+
+.buttons{
+	height:40px;
+	width: 90px;
+	border: unset;
+	border-radius: 8%;
+	background-color: rgb(36, 152, 206);
+}
+
+.label-button{
+	color: rgb(190, 236, 238);
+}
+
+.buttons:hover{
+	background-color: rgb(8, 57, 80);
+}
+
+#newsletterForm label.error {
+  margin-left: 10px;
+  width: 200px;
+  display: inherit;
+}
+
+
+/** About page accordion */
+#accordion{
+  margin:0 400px 0 0;
+  width: 100%;
+
+}
+
+
+/** Billing Page*/
+.billing-form-body{
+  margin:auto;
+	width: 40%;
+}
+
+.formBilling{
+  border-radius: 0%;
+  height: 30px;
+}
+
+.billingButton{
+  padding: 1em;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/** Confirmation Page */
+#confirmation-details{
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 60%;
+  height:  1050px;
+  padding-bottom: 3em;
+}

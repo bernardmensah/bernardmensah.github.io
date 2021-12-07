@@ -1,0 +1,65 @@
+<footer>
+    <div class="main-footer-container">
+        <div>
+            <h5 class="band-name">
+                GEMINI ANGELS
+            </h5>
+        </div>
+        <div>
+            <ul class="nav footer-nav">
+                <li><a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/facebook_icon.svg.png" alt="social media image" width="30">
+                    </a>
+                </li>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/instagram-logo.jpg" alt="social media image" width="30">
+                    </a>
+                </li>
+                <li><a href="https://twitter.com/" target="_blank">
+                        <img src="images/twitter.png" alt="social media image" width="30">
+                    </a>
+                </li>
+                <li><a href="https://www.spotify.com/us/" target="_blank">
+                        <img src="images/spotify-icon-green-logo-8.png" alt="social media image" width="30">
+                    </a>
+                </li>
+                <li><a href="https://www.apple.com/apple-music/" target="_blank">
+                        <img src="images/apple_music_logo.png" alt="social media image"
+                            width="30">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h4>
+        Page built by Bernard's IT solutions
+    </h4>
+    <div class="validations">
+        <a id="htmlvalidator" href="http://validator.w3.org/check?uri=referer">
+            <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+        </a>
+
+        <a
+        id="cssvalidator" href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+        </a>
+    </div>
+
+    <script>
+        // this will make sure the validation links include the url of the current page
+        // which seems to be necessary with github and some sites that don't send the referrer
+        // headings
+
+        var currentURL = window.location.href; // gets current URL
+
+        // append current URL to the URL's for each validation service
+        var htmlValidatorURL = "http://validator.w3.org/check?uri=" + currentURL;
+        var cssValidatorURL = "http://jigsaw.w3.org/css-validator/validator?uri=" + currentURL;
+
+        // assign the URL's to the anchor elements in the footer
+        document.getElementById("htmlvalidator").setAttribute("href", htmlValidatorURL);
+        document.getElementById("cssvalidator").setAttribute("href", cssValidatorURL);
+        
+        </script>
+</footer>

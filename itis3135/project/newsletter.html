@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="This is the description">
+	<title>Gemini Angels- Newsletter</title>
+	<link rel="stylesheet" href="styles/default.css">
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+	<script src="scripts/newsletter.js"></script>
+</head>
+
+<body>
+
+	<div data-include="components/siteheader.html"></div>
+	<main>
+		<h2>Newsletter</h2>
+		<br>
+		<h3 class="survey-text">Are you interested in subscribing to our newsletter and coupon deals?</h3>
+		<h3>Sign Up Below</h3>
+		<div class="form-body">
+			<form id="newsletterForm" action="#">
+				<div class="form-input-area">
+					<div class="form-group">
+						<label>Name:</label>
+						<input id="Name" type="text" name="Name" class="form-control" placeholder="">
+					</div>
+
+					<div class="form-group">
+						<label>Email:</label>
+						<input id="Email" size="30" name="Email" class="form-control" placeholder="email">
+					</div>
+
+					<div class="form-group">
+						<label>Phone:</label>
+						<input id="Phone" type="number" name="Phone" class="form-control"
+							placeholder="(000)-(000)-(0000)">
+					</div>
+				</div>
+				<div class="form-dropdown">
+					<div class="form-group">
+						<label>How would you like to receive communications?</label>
+						<select class="form-control">
+							<option>Email</option>
+							<option>Call</option>
+							<option>Text Message</option>
+						</select>
+					</div>
+				</div>
+				<div class="checkboxes-and-radio">
+					<div class="form-checkboxes">
+						<h4>Which category of our newsletter interests you?</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox">
+							<label class="form-check-label">Weekly coupon deals</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox">
+							<label class="form-check-label">New innovations</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox">
+							<label class="form-check-label">Upcoming Events</label>
+						</div>
+
+					</div>
+					<div class="form-radiobuttons">
+						<h4>Communication frequency</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="radio1">
+							<label class="form-check-label">Daily</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="radio1" checked="">
+							<label class="form-check-label">Weekly</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="radio1" checked="">
+							<label class="form-check-label">Monthly</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-buttons">
+					<div class="form-btn">
+						<button type="submit" class="buttons"><span class="label-button">Submit</span></button>
+					</div>
+				</div>
+
+			</form><!-- newsletter form-->
+		</div>
+	</main><!-- main content-->
+	<br>
+	<br>
+	<br>
+	<div data-include="components/sitefooter.html"></div>
+	<script src="scripts/HTML-include.js"></script>
+</body>
+
+</html>
