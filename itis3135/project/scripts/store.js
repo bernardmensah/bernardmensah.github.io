@@ -99,7 +99,6 @@ $(document).ready(function()
     //ADD TO CART button event handler to add store item info into localStorage
     $(".item-button").on('click',function(evt)
     {
-        console.log($(this).attr("data-index"));
         var itemIndex =  $(this).attr("data-index");
         var value = 1;
         localStorage.setItem(itemIndex, 1);

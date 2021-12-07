@@ -16,8 +16,6 @@ function getCartItems() {
         },
         dataType: "JSON",
         success: function (data) {
-
-            console.log(data);
             //function to use data from the JSON file and the data in the local storage to populate the carts
             $.each(data, function () {
                 $.each(this, function (key, value) {
