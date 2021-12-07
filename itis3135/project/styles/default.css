@@ -33,6 +33,14 @@ h4{
   font-weight: bold;
 }
 
+h5{
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #bb78cc;
+  font-size: 30px;
+}
+
 p{
   text-align: justify;
   color: #000000bf;
@@ -62,7 +70,7 @@ ul{
   font-weight: normal;
   font-size: 1em;
   color: #56CCF2;
-  font-family: cursive;
+  font-family:cursive;
 }
 
 .nav a:hover{
@@ -80,6 +88,25 @@ ul{
   display: flex;
   justify-content: space-between;
 }
+
+/*https://codepen.io/chandrashekhar/pen/abzMOvO */
+#count {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #c933cb;
+  border-radius: 500px;
+  font-size: 12px;
+  display: inline-flex;;
+  justify-content: center;
+  align-items: center;
+  top: 3px;
+  right: 20px;
+  color: #f6f6f6;
+  transform: translate(0%, -0%);
+  z-index: 2;
+}
+
 /**Header Css*/
 .main-header{
   height: 300px;
@@ -128,7 +155,7 @@ ul{
 footer{
 
   background-color: rgba(37, 36, 36, 0.7);
-  background-image:  url("../images/Image4.png");
+  background-image:  url("../images/image4.png");
   background-size:auto;
   background-blend-mode:multiply;
   color: white;
@@ -193,6 +220,15 @@ footer{
   height:45px;
 }
 
+
+#homepage-audio{
+ margin-top: 20px;
+ display: flex;
+ visibility: hidden;
+ justify-content: center;
+}
+
+
 #image{
   margin-left: 80px;
   width: 80%;
@@ -200,7 +236,6 @@ footer{
   border:none;
   border-radius: 1em;
 }
-
 
 .tour-row{
   border-bottom: 1px solid;
@@ -511,4 +546,31 @@ label{
   margin:0 400px 0 0;
   width: 100%;
 
+}
+
+
+/** Billing Page*/
+.billing-form-body{
+  margin:auto;
+	width: 40%;
+}
+
+.formBilling{
+  border-radius: 0%;
+  height: 30px;
+}
+
+.billingButton{
+  padding: 1em;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/** Confirmation Page */
+#confirmation-details{
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 60%;
+  height:  1050px;
+  padding-bottom: 3em;
 }

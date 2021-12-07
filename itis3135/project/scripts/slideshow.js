@@ -4,11 +4,11 @@ $(document).ready(function()
     //array of images
     var pictures = [
         "",
-        ["images/Image1.png"],
-        ["images/Image2.png"],
-        ["images/Image3.png"],
-        ["images/Image5.jpg"],
-        ["images/Image6.jpg"]
+        ["images/image1.png"],
+        ["images/image2.png"],
+        ["images/image3.png"],
+        ["images/image5.jpg"],
+        ["images/image6.jpg"]
     ];
 
     var picturesCount = pictures.length;
@@ -19,7 +19,8 @@ $(document).ready(function()
             $("#image").fadeOut(1000,
                     function() {
                         nextImage = pictures[Math.floor(Math.random() * 6)];
-                        console.log(nextImage);
+                        $("#image").attr("alt",
+                            "slideshow image");
                         $("#image").attr("src",
                             nextImage[0]).fadeIn(3000);
                     });
