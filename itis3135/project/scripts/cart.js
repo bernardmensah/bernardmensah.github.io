@@ -10,7 +10,7 @@ function getCartItems() {
     var totalPrice = 0;
     $.ajax({
         type: "GET",
-        url: "data/storeItems.json",
+        url: "data/storeitems.json",
         error: function (xhr, status, error) {
             alert("Error: " + xhr.status + " - " + error);
         },
